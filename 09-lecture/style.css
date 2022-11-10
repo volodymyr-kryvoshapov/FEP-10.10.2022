@@ -1,0 +1,27 @@
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: lightyellow;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.container {
+    width: 200px;
+}
+
+.font {
+    font: 30px italic;
+}
+
+.hide {
+    display: none;
+}
