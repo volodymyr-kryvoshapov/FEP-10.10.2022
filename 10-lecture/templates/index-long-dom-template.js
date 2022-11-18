@@ -38,6 +38,8 @@ function createTodo(message) {
   const deleteBtn = document.createElement('button');
   deleteBtn.textContent = '[Delete]';
 
+  deleteBtn.addEventListener('click', () => {})
+
   li.append(editBtn);
   li.append(deleteBtn);
   ul.append(li);

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Contacts</title>
+  <link rel="stylesheet" href="./index.css" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+
+    <tbody id="contactContainer"></tbody>
+  </table>
+
+  <form id="contactForm" class="form">
+    <input type="text" name="name"    id="nameInput"    class="formInput" />
+    <input type="text" name="surname" id="surnameInput" class="formInput" />
+    <input type="text" name="phone"   id="phoneInput"   class="formInput" />
+    <button id="addContactBtn">Add Contact</button>
+  </form>
+
+  <script id="contactTemplate" type="text/template">
+    <tr class="contactItem">
+      <td>{{name}}</td>
+      <td>{{surname}}</td>
+      <td>{{phone}}</td>
+      <td><span><button type="button" class="deleteBtn">Delete</button></span></td>
+    </tr>
+  </script>
+
+</body>
+</html>
