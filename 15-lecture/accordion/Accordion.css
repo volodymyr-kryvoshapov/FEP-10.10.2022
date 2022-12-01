@@ -1,0 +1,19 @@
+.accordion-item {
+    border: 2px solid darkred;
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+.accordion-item-header {
+    background-color: gold;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+.accordion-item-content {
+    height: 50px;
+    display: none;
+}
+
+.open {
+    display: block;
+}
