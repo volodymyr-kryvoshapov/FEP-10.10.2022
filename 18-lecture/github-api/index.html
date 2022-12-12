@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="index.js" defer></script>
+  <title>GitHub API</title>
+</head>
+<body>
+
+  <form id="userForm">
+    <input id="nameInput" value="volodymyr-kryvoshapov" type="text" placeholder="Git username">
+    <button type="submit">Find</button>
+  </form>
+
+  <div id="userInfoContainer"></div>
+
+  <script id="userTemplate" type="text/template">
+    <div class="userInfoRow">
+      <img src="{{avatar_url}}" />
+      <p>Repos: {{public_repos}}</p>
+      <p>Followers: {{followers}}</p>
+      <p>Following: {{following}}</p>
+    </div>
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+CRUD:
+Create POST
+Read GET
+- get list
+- get one
+Update PUT, PUTCH
+Delete DELETE
+
+GET https://shop.com/users/123/books/42
+DELETE https://shop.com/users/123/books/42
+PUT https://shop.com/users/123/books/42
+PUTCH https://shop.com/users/123/books/42
+
+
+https://shop.com/users/123/books/42?author=london&year=2022$sort=desc
+
+
+// CRUD /api/todo
+// POST     https://62054479161670001741b708.mockapi.io/api/todo/
+// GET      https://62054479161670001741b708.mockapi.io/api/todo/
+// GET      https://62054479161670001741b708.mockapi.io/api/todo/42
+// PUT      https://62054479161670001741b708.mockapi.io/api/todo/42
+// DELETE   https://62054479161670001741b708.mockapi.io/api/todo/42
+
