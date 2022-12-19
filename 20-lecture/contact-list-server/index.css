@@ -1,0 +1,7 @@
+.formInput {
+  width: 100px;
+}
+
+.formInput.invalid {
+  border-color: red;
+}

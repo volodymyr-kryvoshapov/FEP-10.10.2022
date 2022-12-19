@@ -146,6 +146,7 @@ function getTodoElId(todoEl) {
 function findTodoById(id) {
   return todoList.find(item => item.id === id);
 }
+
 function updateTodoKeys(id, changes) {
   const oldTodo = findTodoById(id)
 
