@@ -1,0 +1,9 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
+
+.photos > img {
+    border: 3px solid white;
+}
