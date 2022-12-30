@@ -1,0 +1,66 @@
+body,
+html {
+    height: 100%;
+}
+
+input[type='text'],
+textarea {
+    color: black;
+}
+
+.u-full-height {
+    height: 100%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.list {
+    margin-top: -50px;
+    padding-top: 50px;
+    display: none;
+}
+
+.heading {
+    height: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.heading button {
+    float: right;
+    margin: 5px;
+}
+
+.note-description {
+    height: 160px;
+}
+
+.note {
+    width: 200px;
+    background-color: lightgreen;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.note .delete-note {
+    float: right;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.note h5 {
+    margin-bottom: 5px;
+    cursor: move;
+}
+.note textarea {
+    height: 100%;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
