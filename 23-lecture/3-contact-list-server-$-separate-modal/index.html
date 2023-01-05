@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Contacts</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="ContactApi.js" defer></script>
+  <script src="FormDialog.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+<button id="createContactBtn">Create</button>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+
+    <tbody id="contactContainer"></tbody>
+  </table>
+
+  <div id="dialogForm" title="Contact form">
+    <form id="contactForm" class="form">
+      <fieldset>
+        <input type="hidden"  name="id"             id="id" class="formInput">
+
+        <label for="firstName">firstName</label>
+        <input type="text"    name="firstName"      id="firstName" />
+
+        <label for="lastName">lastName</label>
+        <input type="text"    name="lastName"       id="lastName" />
+
+        <label for="phone">phone</label>
+        <input type="text"    name="phone"          id="phone" />
+
+        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>

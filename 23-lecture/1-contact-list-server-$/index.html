@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Contacts</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>  <script src="ContactApi.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+  <form id="contactForm" class="form">
+    <input type="hidden"  name="id"             id="id" class="formInput">
+    <input type="text"    name="firstName"      id="nameInput"    class="formInput" />
+    <input type="text"    name="lastName"       id="surnameInput" class="formInput" />
+    <input type="text"    name="phone"          id="phoneInput"   class="formInput" />
+    <button>Save</button>
+  </form>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+
+    <tbody id="contactContainer"></tbody>
+  </table>
+
+</body>
+</html>
