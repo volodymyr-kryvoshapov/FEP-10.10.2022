@@ -65,7 +65,7 @@ function onDeleteBtnClick(e) {
     ContactApi
       .delete(id)
       .then(() => {
-        contactList = contactList.map(contact => contact.id !== id);
+        contactList = contactList.filter(contact => contact.id !== id);
         removeContactElById(id);
       })
   }
